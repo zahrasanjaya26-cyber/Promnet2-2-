@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riwayat Aktivitas</title>
+    <body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h2>My Website</h2>
+
+       <nav>
+      <a href="index.html"
+        >Home</a
+      >
+      |
+      <a
+        href="About me.html"
+        >About</a
+      >
+      |
+      <a href="Project.html"
+        >Project</a
+      >
+      |
+       <a href="Contact.html"
+        >Contact</a
+        >
+      |
+       <a href="History.html"
+       >History</a
+      >
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <div class="page-title">
+            <h1>Riwayat Aktivitas</h1>
+            <p>Lihat seluruh aktivitas yang telah kamu lakukan.</p>
+        </div>
+
+        <!-- Search & Filter -->
+        <div class="toolbar">
+
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Cari riwayat..."
+                    onkeyup="searchHistory()"
+                >
+            </div>
+
+            <div class="filter">
+                <select id="statusFilter" onchange="filterHistory()">
+                    <option value="all">Semua Status</option>
+                    <option value="success">Berhasil</option>
+                    <option value="pending">Diproses</option>
+                    <option value="failed">Gagal</option>
+                </select>
+            </div>
+
+        </div>
+
+        <!-- History List -->
+        <div class="history-container" id="historyList">
+
+            <!-- History 1 -->
+            <div
+                class="history-item"
+                data-status="success"
+                data-name="Login ke sistem"
+            >
+                <div class="history-info">
+                    <div class="history-icon">✓</div>
+
+                    <div>
+                        <h3>Login ke Sistem</h3>
+                        <p>9 September 2026, 19:00</p>
+                    </div>
+                </div>
+
+                <div>
+                    <span class="status success">Berhasil</span>
+
+                    <button
+                        class="detail-btn"
+                        onclick="showDetail(
+                            'Login ke Sistem',
+                            '9 September 2026, 19:00',
+                            'Berhasil'
+                        )"
+                    >
+                        Detail
+                    </button>
+                </div>
+            </div>
+
+            <!-- History 2 -->
+            <div
+                class="history-item"
+                data-status="success"
+                data-name="Mengubah profil"
+            >
+                <div class="history-info">
+                    <div class="history-icon">✎</div>
+
+                    <div>
+                        <h3>Mengubah Profil</h3>
+                        <p>9 September 2026, 15:30</p>
+                    </div>
+                </div>
+
+                <div>
+                    <span class="status success">Berhasil</span>
+
+                    <button
+                        class="detail-btn"
+                        onclick="showDetail(
+                            'Mengubah Profil',
+                            '9 September 2026, 15:30',
+                            'Berhasil'
+                        )"
+                    >
+                        Detail
+                    </button>
+                </div>
+            </div>
+
+            <!-- History 3 -->
+            <div
+                class="history-item"
+                data-status="pending"
+                data-name="Mengirim data"
+            >
+                <div class="history-info">
+                    <div class="history-icon">⏳</div>
+
+                    <div>
+                        <h3>Mengirim Data</h3>
+                        <p>8 September 2026, 13:20</p>
+                    </div>
+                </div>
+
+                <div>
+                    <span class="status pending">Diproses</span>
+
+                    <button
+                        class="detail-btn"
+                        onclick="showDetail(
+                            'Mengirim Data',
+                            '8 September 2026, 13:20',
+                            'Diproses'
+                        )"
+                    >
+                        Detail
+                    </button>
+                </div>
+            </div>
+
+            <!-- History 4 -->
+            <div
+                class="history-item"
+                data-status="failed"
+                data-name="Upload dokumen"
+            >
+                <div class="history-info">
+                    <div class="history-icon">!</div>
+
+                    <div>
+                        <h3>Upload Dokumen</h3>
+                        <p>7 September 2026, 10:15</p>
+                    </div>
+                </div>
+
+                <div>
+                    <span class="status failed">Gagal</span>
+
+                    <button
+                        class="detail-btn"
+                        onclick="showDetail(
+                            'Upload Dokumen',
+                            '7 September 2026, 10:15',
+                            'Gagal'
+                        )"
+                    >
+                        Detail
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Modal Detail -->
+    <div class="modal" id="detailModal">
+
+        <div class="modal-content">
+
+            <h2>Detail Riwayat</h2>
+
+            <p>
+                <strong>Aktivitas:</strong>
+                <span id="detailName"></span>
+            </p>
+
+            <p>
+                <strong>Waktu:</strong>
+                <span id="detailDate"></span>
+            </p>
+
+            <p>
+                <strong>Status:</strong>
+                <span id="detailStatus"></span>
+            </p>
+
+            <button
+                class="close-btn"
+                onclick="closeModal()"
+            >
+                Tutup
+            </button>
+
+        </div>
+
+    </div>
+     </body>
+</html>
