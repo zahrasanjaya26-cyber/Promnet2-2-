@@ -1,0 +1,145 @@
+*{ margin: 2;
+   padding: 0;
+}
+
+
+h1 {
+    text-align: center;
+    font-family: Georgia, serif;
+    color: #ff80bf;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 20px 0 10px;
+}
+
+p {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ad1198;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+nav{
+    background-color: #ff80bf;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 10px 14px;
+    gap: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;  
+    margin: 15px auto;
+}
+
+nav a{
+    text-align: center;
+    color: #334155;
+    text-decoration: none; 
+    font-family: Georgia, serif;
+    font-size: 13px;
+}
+
+nav a:hover {
+  color: #ffffff;       
+}
+
+h2 {
+    text-align: center;
+    font-family: Georgia, serif;
+    color: #f7a4cd;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+h3 {
+    text-align: center;
+    color: #f79eca;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 30px auto;
+}
+
+li {
+   
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #f5a7e1;
+    color: #f5a
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 15px auto;
+  text-align: center;
+}
+
+.badge-skill {
+    background-color: #ff80bf;
+    color: #334155;
+    font-family: Georgia, serif;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 15px 20px;   
+    border-radius: 50px;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease, color 0.2s ease;
+}
+
+.badge-skill:hover {
+  color: #ffffff;
+  background-color: #f766ae;
+  transform: translateY(-2px);
+}
+
+.badge-skill:active {
+  transform: translateY(0);
+}
+
+#header{
+    background: linear-gradient(#012d44, #d9cfff );
+    display: flex;
+    padding: 50px 30px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 20px auto;
+  border: 4px solid #fac0e3;
+  box-shadow: 0 0 15px #f7b8e2, 0 0 25px #fc99d9 !important;
+  animation: jedakJeduk 2s ease-in-out infinite !important;
+}
+
+@keyframes jedakJeduk {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
