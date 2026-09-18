@@ -15,10 +15,11 @@ h1 {
 
 p {
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: ‘Times New Roman’, Times, serif;
     color: #ad1198;
     font-size: 16px;
     line-height: 1.5;
+    font-weight: 600;
 }
 
 nav{
@@ -39,6 +40,7 @@ nav a{
     text-decoration: none; 
     font-family: Georgia, serif;
     font-size: 13px;
+    font-weight: 600;
 }
 
 nav a:hover {
@@ -72,12 +74,12 @@ ul {
 
 li {
    
-    padding: 20px;
-    width: 200px;
+    padding: 12px;
+    width: 160px;
     text-align: center;
     border-radius: 10px;
     background-color: #f5a7e1;
-    color: #f5a
+    color: rgb(34, 50, 61)
 }
 
 .skills-container {
@@ -91,7 +93,7 @@ li {
 
 .badge-skill {
     background-color: #ff80bf;
-    color: #334155;
+    color: #17202e;
     font-family: Georgia, serif;
     font-size: 13px;
     font-weight: 500;
@@ -142,4 +144,110 @@ li {
   50% {
     transform: translateY(-8px);
   }
+}
+
+===== ABOUT ===== 
+
+body {
+    background-color: #d9f7ff;
+    font-family: Georgia, serif;
+    color: #6b4b70;
+}
+
+body > h1 {
+    margin-top: 25px;
+}
+
+body > p {
+    margin-bottom: 15px;
+}
+
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+main p {
+    margin: 12px auto;
+    color: #7d5278;
+}
+
+main h2 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+th,
+td {
+    border: 2px solid #f7a4cd;
+    padding: 10px 15px;
+}
+
+th {
+    background-color: #ffb6d9;
+    color: #5f4565;
+}
+
+td {
+    color: #6b4b70;
+    background-color: #fff5fa;
+}
+
+
+main li {
+    width: auto;
+    padding: 8px;
+    background-color: transparent;
+    color: #6b4b70;
+}
+
+.kapsul {
+    padding: 12px;
+    width: 160px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #f5a7e1;
+    color: #012d44;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.kapsul:hover {
+    background-color: #f766ae;
+}
+
+.kapsul:active {
+    background-color: #012d44;
+    color: white;
+}
+
+li {
+    padding: 10px 16px;
+    width: 180px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #f5a7e1;
+    color: #012d44;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+li:hover {
+    background-color: #d95b9d;
+    color: #012d44;
+}
+
+li:active {
+    background-color: #012d44;
+    color: white;
 }
